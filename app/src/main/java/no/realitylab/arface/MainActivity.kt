@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.ar.core.ArCoreApk
 import com.google.ar.core.AugmentedFace
+import com.google.ar.core.TrackingState
 import com.google.ar.sceneform.rendering.Renderable
 import com.google.ar.sceneform.rendering.Texture
 import com.google.ar.sceneform.ux.AugmentedFaceNode
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         arFragment = face_fragment as FaceArFragment
         Texture.builder()
-            .setSource(this, R.drawable.face8)
+            .setSource(this, R.drawable.makeup)
             .build()
             .thenAccept { texture -> faceMeshTexture = texture }
 
@@ -49,6 +50,17 @@ class MainActivity : AppCompatActivity() {
                             faceNode.setParent(scene)
                             faceNode.faceMeshTexture = faceMeshTexture
                             faceNodeMap.put(f, faceNode)
+                        }
+                    }
+                    // Remove any AugmentedFaceNodes associated with an AugmentedFace that stopped tracking.
+                    val iter = faceNodeMap.entries.iterator()
+                    while (iter.hasNext()) {
+                        val entry = iter.next()
+                        val face = entry.key
+                        if (face.trackingState == TrackingState.STOPPED) {
+                            val faceNode = entry.value
+                            faceNode.setParent(null)
+                            iter.remove()
                         }
                     }
                 }
