@@ -38,3 +38,13 @@ dependencies {
 }
 
 apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/sunglasses.fbx',
+        'default',
+        'sampledata/sunglasses.sfa',
+        'src/main/assets/sunglasses')
+
+sceneform.asset('sampledata/yellow_sunglasses.fbx',
+        'default',
+        'sampledata/yellow_sunglasses.sfa',
+        'src/main/assets/yellow_sunglasses')

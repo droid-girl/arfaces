@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">arface</string>
+    <string name="makeup">Makeup tutorial</string>
+    <string name="glasses">Glasses tutorial</string>
 </resources>
