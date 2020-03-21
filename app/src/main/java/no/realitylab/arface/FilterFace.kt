@@ -29,7 +29,6 @@ class FilterFace(augmentedFace: AugmentedFace?,
 
         mHandler = Handler()
 
-
         ViewRenderable.builder()
             .setView(context, R.layout.card_layout)
             .build()
@@ -51,11 +50,11 @@ class FilterFace(augmentedFace: AugmentedFace?,
         super.onUpdate(frameTime)
         augmentedFace?.let {face ->
             val rightForehead = face.getRegionPose(AugmentedFace.RegionType.FOREHEAD_RIGHT)
-            val leftForehear = face.getRegionPose(AugmentedFace.RegionType.FOREHEAD_LEFT)
+            val leftForehead = face.getRegionPose(AugmentedFace.RegionType.FOREHEAD_LEFT)
             val center = face.centerPose
 
-            cardNode?.worldPosition = Vector3((leftForehear.tx() + rightForehead.tx()) / 2,
-                (leftForehear.ty() + rightForehead.ty()) / 2 + 0.05f , center.tz())
+            cardNode?.worldPosition = Vector3((leftForehead.tx() + rightForehead.tx()) / 2,
+                (leftForehead.ty() + rightForehead.ty()) / 2 + 0.05f , center.tz())
         }
     }
 
