@@ -38,6 +38,11 @@
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="locked"/>
+        <activity android:name=".FaceRegionsActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="locked"/>
+
     </application>
 
 </manifest>

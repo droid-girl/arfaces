@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceRegionsActivity">
+
+    <fragment android:name="no.realitylab.arface.FaceArFragment"
+        android:id="@+id/face_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/button_refresh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_autorenew_black_24dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@null"/>
+
+</FrameLayout>

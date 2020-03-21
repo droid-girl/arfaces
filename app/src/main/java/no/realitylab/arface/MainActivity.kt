@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         button_glasses.setOnClickListener {
             startActivity(Intent(this, GlassesActivity::class.java))
         }
+
+        button_regions.setOnClickListener {
+            startActivity(Intent(this, FaceRegionsActivity::class.java))
+        }
     }
 
 }
