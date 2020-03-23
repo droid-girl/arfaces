@@ -10,4 +10,4 @@ Blog post -> https://creativetech.blog/home/try-on-glasses-arcore-augmented-face
 <br/>
 <br/>
 <b> Instagram - like filter "Which ... are you?" with Augmented Faces </b> <br/>
-Blog post -> creativetech.blog/home/which-are-you-instagram-like-filter-arcore
+Blog post -> https://creativetech.blog/home/which-are-you-instagram-like-filter-arcore
