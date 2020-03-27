@@ -1,4 +1,4 @@
-# AR makeup & glasses try-on demo with ARCore
+# Augmented Faces ARCore tutorials
 Augmented Faces for Android
 
 <b> Try-On makeup with Augmented Faces </b> <br/>
