@@ -24,4 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/regions" />
+
+    <Button
+        android:id="@+id/button_face_landmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/face_landmarks" />
 </LinearLayout>

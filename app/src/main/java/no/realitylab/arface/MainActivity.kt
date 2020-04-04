@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         button_regions.setOnClickListener {
             startActivity(Intent(this, FaceRegionsActivity::class.java))
         }
+
+        button_face_landmarks.setOnClickListener {
+            startActivity(Intent(this, FaceLandmarksActivity::class.java))
+        }
     }
 
 }

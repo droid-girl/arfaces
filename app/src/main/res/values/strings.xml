@@ -3,5 +3,6 @@
     <string name="makeup">Makeup tutorial</string>
     <string name="glasses">Glasses tutorial</string>
     <string name="regions">Quiz tutorial</string>
+    <string name="face_landmarks">Face landmarks</string>
     <string name="quiz_title">What animal are you?</string>
 </resources>
