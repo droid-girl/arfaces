@@ -14,4 +14,4 @@ Blog post -> https://creativetech.blog/home/which-are-you-instagram-like-filter-
 <br/>
 <br/>
 <b> Face Landmarks for ARCore Augmented Faces </b> <br/>
-Blog post -> creativetech.blog/home/face-landmarks-for-arcore-augmented-faces
+Blog post -> https://creativetech.blog/home/face-landmarks-for-arcore-augmented-faces
