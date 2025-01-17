@@ -16,7 +16,4 @@ Blog post -> https://creativetech.blog/home/which-are-you-instagram-like-filter-
 <b> Face Landmarks for ARCore Augmented Faces </b> <br/>
 Blog post -> https://creativetech.blog/home/face-landmarks-for-arcore-augmented-faces
 
-# Augmented Faces WITHOUT Sceneform
-<b> Check out ARCore.How -> https://arcore.how </b> </br>
-Blog post -> https://creativetech.blog/home/augmented-faces-without-sceneform 
-<br>
+
